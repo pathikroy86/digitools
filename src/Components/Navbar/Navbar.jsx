@@ -34,7 +34,7 @@ const Navbar = () => {
                 <div className="navbar-end space-x-3">
                     <button><MdOutlineShoppingCart /></button>
                     <a className='text-[#101727] font-semibold'>Login</a>
-                    <a className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA]  text-white font-semibold rounded-full">Button</a>
+                    <a className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA]  text-white font-semibold rounded-full">Get Started</a>
                 </div>
             </div>
         </div>

@@ -1,0 +1,152 @@
+[
+    {
+        "id": 1,
+        "name": "Resume Builder Pro",
+        "description": "Create professional resumes with customizable templates and smart suggestions.",
+        "price": 19,
+        "period": "monthly",
+        "tag": "popular",
+        "tagType": "popular",
+        "features": [
+            "100+ templates",
+            "ATS optimization",
+            "Export to PDF"
+        ],
+        "icon": "📄"
+    },
+    {
+        "id": 2,
+        "name": "Portfolio Website Kit",
+        "description": "Build a stunning personal portfolio website in minutes.",
+        "price": 49,
+        "period": "one-time",
+        "tag": "best seller",
+        "tagType": "best seller",
+        "features": [
+            "Responsive design",
+            "Custom domains",
+            "SEO optimized"
+        ],
+        "icon": "🌐"
+    },
+    {
+        "id": 3,
+        "name": "AI Cover Letter Generator",
+        "description": "Generate tailored cover letters using AI for job applications.",
+        "price": 9,
+        "period": "monthly",
+        "tag": "new",
+        "tagType": "new",
+        "features": [
+            "AI suggestions",
+            "Multiple formats",
+            "Instant export"
+        ],
+        "icon": "✉️"
+    },
+    {
+        "id": 4,
+        "name": "Job Tracker Dashboard",
+        "description": "Track job applications and manage your job search efficiently.",
+        "price": 15,
+        "period": "monthly",
+        "tag": "popular",
+        "tagType": "popular",
+        "features": [
+            "Application tracking",
+            "Status updates",
+            "Analytics"
+        ],
+        "icon": "📊"
+    },
+    {
+        "id": 5,
+        "name": "Freelancer Starter Pack",
+        "description": "Everything you need to kickstart your freelance career.",
+        "price": 79,
+        "period": "one-time",
+        "tag": "best seller",
+        "tagType": "best seller",
+        "features": [
+            "Client templates",
+            "Invoice generator",
+            "Contract samples"
+        ],
+        "icon": "💼"
+    },
+    {
+        "id": 6,
+        "name": "Coding Interview Prep",
+        "description": "Prepare for coding interviews with curated questions and solutions.",
+        "price": 25,
+        "period": "monthly",
+        "tag": "popular",
+        "tagType": "popular",
+        "features": [
+            "500+ problems",
+            "Mock interviews",
+            "Detailed solutions"
+        ],
+        "icon": "💻"
+    },
+    {
+        "id": 7,
+        "name": "UI Design Kit",
+        "description": "Pre-built UI components and templates for fast design workflow.",
+        "price": 39,
+        "period": "one-time",
+        "tag": "new",
+        "tagType": "new",
+        "features": [
+            "Figma files",
+            "Component library",
+            "Dark/light mode"
+        ],
+        "icon": "🎨"
+    },
+    {
+        "id": 8,
+        "name": "Startup Pitch Deck Pack",
+        "description": "Create compelling pitch decks for investors.",
+        "price": 59,
+        "period": "one-time",
+        "tag": "best seller",
+        "tagType": "best seller",
+        "features": [
+            "Slide templates",
+            "Investor tips",
+            "Editable charts"
+        ],
+        "icon": "📈"
+    },
+    {
+        "id": 9,
+        "name": "Personal Finance Tracker",
+        "description": "Manage your expenses and savings effectively.",
+        "price": 12,
+        "period": "monthly",
+        "tag": "popular",
+        "tagType": "popular",
+        "features": [
+            "Expense tracking",
+            "Budget planner",
+            "Reports"
+        ],
+        "icon": "💰"
+    },
+    {
+        "id": 10,
+        "name": "Online Course Builder",
+        "description": "Create and sell your own online courses بسهولة.",
+        "price": 99,
+        "period": "yearly",
+        "tag": "new",
+        "tagType": "new",
+        "features": [
+            "Video hosting",
+            "Student management",
+            "Payment integration"
+        ],
+        "icon": "🎓"
+    }
+]

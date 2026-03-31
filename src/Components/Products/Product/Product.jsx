@@ -1,7 +1,7 @@
 import React from 'react';
 import { TfiCheck } from "react-icons/tfi";
 
-const Product = ({ product, handleSelectedCount }) => {
+const Product = ({ product, handleSelectedCount, handleCart }) => {
     const { name, description, features, icon, price, tag } = product;
     return (
         <div className='shadow-xl rounded-2xl pt-2 px-3 pb-3 space-y-2'>
@@ -15,7 +15,7 @@ const Product = ({ product, handleSelectedCount }) => {
             {
                 features.map(feature => <p className='flex items-center gap-2 text-[#627382] font-medium'><TfiCheck className='text-green-500' /> {feature}</p>)
             }
-            <button onClick={handleSelectedCount} className='btn w-full rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white font-bold'>Buy Now</button>
+            <button onClick={() => { handleCart(product) }} className='btn w-full rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white font-bold'>Buy Now</button>
         </div>
     );
 };

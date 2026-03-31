@@ -24,6 +24,7 @@ const Cart = ({ addedToCart }) => {
                         </div>
                     ))
             }
+
         </div>
     );
 };

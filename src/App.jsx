@@ -4,6 +4,7 @@ import Banner from './Components/Banner/Banner'
 import Counter from './Components/Counter/Counter'
 import Navbar from './Components/Navbar/Navbar'
 import Products from './Components/Products/Products'
+import { ToastContainer, Zoom } from 'react-toastify';
 
 function App() {
 
@@ -23,6 +24,19 @@ function App() {
       <Suspense fallback={<span className="loading loading-dots loading-xl"></span>}>
         <Products prductsResponse={prductsResponse}></Products>
       </Suspense>
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+        transition={Zoom}
+      />
     </>
   )
 }

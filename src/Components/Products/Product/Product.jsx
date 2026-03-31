@@ -1,7 +1,7 @@
 import React from 'react';
 import { TfiCheck } from "react-icons/tfi";
 
-const Product = ({ product, handleSelectedCount, handleCart }) => {
+const Product = ({ product, handleCart }) => {
     const { name, description, features, icon, price, tag } = product;
     return (
         <div className='shadow-xl rounded-2xl pt-2 px-3 pb-3 space-y-2'>

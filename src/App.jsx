@@ -5,6 +5,8 @@ import Counter from './Components/Counter/Counter'
 import Navbar from './Components/Navbar/Navbar'
 import Products from './Components/Products/Products'
 import { ToastContainer, Zoom } from 'react-toastify';
+import GetStarted from './Components/GetStarted/GetStarted'
+import Pricing from './Components/Pricing/Pricing'
 
 function App() {
 
@@ -17,9 +19,7 @@ function App() {
   const [totalPrice, setTotalPrice] = useState(0);
   const handleTotalPrice = (price) => {
     setTotalPrice(totalPrice + price);
-
   }
-
   return (
     <>
       <Navbar></Navbar>
@@ -30,6 +30,8 @@ function App() {
       <Suspense fallback={<span className="loading loading-dots loading-xl"></span>}>
         <Products prductsResponse={prductsResponse} handleTotalPrice={handleTotalPrice} totalPrice={totalPrice}></Products>
       </Suspense>
+      <GetStarted></GetStarted>
+      <Pricing></Pricing>
       <ToastContainer
         position="top-right"
         autoClose={3000}

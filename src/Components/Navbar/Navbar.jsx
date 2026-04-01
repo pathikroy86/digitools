@@ -1,7 +1,7 @@
 import React from 'react';
 import { MdOutlineShoppingCart } from "react-icons/md";
 
-const Navbar = () => {
+const Navbar = ({ totalPrice }) => {
     return (
         <div className='w-11/12 md:w-10/12 mx-auto mb-5'>
             <div className="navbar bg-base-100 shadow-sm">

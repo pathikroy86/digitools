@@ -1,10 +1,6 @@
 import React from 'react';
 
-const Cart = ({ addedToCart, totalPrice, removeItem }) => {
-    const emptyCart = () => {
-        addedToCart = [];
-    }
-
+const Cart = ({ addedToCart, totalPrice, removeItem, clearCart }) => {
     return (
         <div className='p-5 shadow rounded-xl'>
             <h3 className='text-2xl font-bold mb-3'>Your Cart</h3>
@@ -32,7 +28,7 @@ const Cart = ({ addedToCart, totalPrice, removeItem }) => {
                     <p className='text-xl font-medium'>Total</p>
                     <p className='text-xl font-bold'>$<span>{totalPrice}</span></p>
                 </div>
-                <div><button onClick={emptyCart} className='w-full btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white font-semibold rounded-full'>Proceed to Checkout</button></div>
+                <div><button onClick={clearCart} className='w-full btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white font-semibold rounded-full'>Proceed to Checkout</button></div>
             </div>
 
         </div>

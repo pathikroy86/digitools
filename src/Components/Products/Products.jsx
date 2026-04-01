@@ -35,6 +35,12 @@ const Products = ({ prductsResponse, handleTotalPrice, totalPrice }) => {
         setSelectedCount(selectedCount - 1);
         handleTotalPrice(-product.price);
     }
+
+    const clearCart = () => {
+        setAddedToCart([]);
+        setSelectedCount(0);
+        handleTotalPrice(-totalPrice);
+    }
     return (
         <div className='w-11/12 md:w-10/12 mx-auto mb-5 md:mb-10'>
             <div className='flex justify-center mb-5 md:mb-10'>
@@ -62,7 +68,7 @@ const Products = ({ prductsResponse, handleTotalPrice, totalPrice }) => {
                 </div>
             )}
             {activeTab === 'cart' && (
-                <Cart addedToCart={addedToCart} totalPrice={totalPrice} removeItem={removeItem}></Cart>
+                <Cart addedToCart={addedToCart} totalPrice={totalPrice} removeItem={removeItem} clearCart={clearCart}></Cart>
             )}
 
         </div>

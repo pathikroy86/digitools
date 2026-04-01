@@ -1,6 +1,5 @@
 import React from 'react';
 import { TfiCheck } from "react-icons/tfi";
-import { toast } from 'react-toastify';
 
 const Product = ({ product, handleCart, handleTotalPrice }) => {
     const { name, description, features, icon, price, tag } = product;

@@ -7,6 +7,7 @@ import Products from './Components/Products/Products'
 import { ToastContainer, Zoom } from 'react-toastify';
 import GetStarted from './Components/GetStarted/GetStarted'
 import Pricing from './Components/Pricing/Pricing'
+import Footer from './Components/Footer/Footer'
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
       </Suspense>
       <GetStarted></GetStarted>
       <Pricing></Pricing>
+      <Footer></Footer>
       <ToastContainer
         position="top-right"
         autoClose={3000}

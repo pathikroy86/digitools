@@ -1,6 +1,9 @@
 import React from 'react';
 
-const Cart = ({ addedToCart }) => {
+const Cart = ({ addedToCart, totalPrice, removeItem }) => {
+    const emptyCart = () => {
+        addedToCart = [];
+    }
 
     return (
         <div className='p-5 shadow rounded-xl'>
@@ -20,10 +23,17 @@ const Cart = ({ addedToCart }) => {
                                 </div>
                             </div>
 
-                            <div><button className='btn text-[#FF3980]'>Remove</button></div>
+                            <div><button onClick={() => removeItem(product)} className='btn text-[#FF3980]'>Remove</button></div>
                         </div>
                     ))
             }
+            <div className='shadow px-3 py-3 rounded-xl'>
+                <div className='flex justify-between mb-5'>
+                    <p className='text-xl font-medium'>Total</p>
+                    <p className='text-xl font-bold'>$<span>{totalPrice}</span></p>
+                </div>
+                <div><button onClick={emptyCart} className='w-full btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white font-semibold rounded-full'>Proceed to Checkout</button></div>
+            </div>
 
         </div>
     );

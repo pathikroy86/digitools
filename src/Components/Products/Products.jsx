@@ -1,8 +1,9 @@
 import React, { use, useState } from 'react';
 import Product from './Product/Product';
 import Cart from '../Cart/Cart';
+import { toast } from 'react-toastify';
 
-const Products = ({ prductsResponse }) => {
+const Products = ({ prductsResponse, handleTotalPrice, totalPrice }) => {
     const products = use(prductsResponse);
 
     const [selectedCount, setSelectedCount] = useState(0);
@@ -14,9 +15,25 @@ const Products = ({ prductsResponse }) => {
 
     const [addedToCart, setAddedToCart] = useState([]);
     const handleCart = (element) => {
+        for (const added of addedToCart) {
+            if (element.id === added.id) {
+                const notify = () => toast.success("Already in Cart");
+                notify();
+                return;
+            }
+        }
         const newArr = [...addedToCart, element];
+        const notify = () => toast.success("Added to Cart");
         handleSelectedCount();
         setAddedToCart(newArr);
+        notify();
+    }
+
+    const removeItem = (product) => {
+        const removed = addedToCart.filter(element => element.id !== product.id);
+        setAddedToCart(removed);
+        setSelectedCount(selectedCount - 1);
+        handleTotalPrice(-product.price);
     }
     return (
         <div className='w-11/12 md:w-10/12 mx-auto mb-5 md:mb-10'>
@@ -39,12 +56,13 @@ const Products = ({ prductsResponse }) => {
                     {
                         products.map(product => <Product key={product.id} product={product} handleSelectedCount={handleSelectedCount}
                             handleCart={handleCart}
+                            handleTotalPrice={handleTotalPrice}
                         ></Product>)
                     }
                 </div>
             )}
             {activeTab === 'cart' && (
-                <Cart addedToCart={addedToCart}></Cart>
+                <Cart addedToCart={addedToCart} totalPrice={totalPrice} removeItem={removeItem}></Cart>
             )}
 
         </div>

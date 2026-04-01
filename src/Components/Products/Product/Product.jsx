@@ -2,9 +2,9 @@ import React from 'react';
 import { TfiCheck } from "react-icons/tfi";
 import { toast } from 'react-toastify';
 
-const Product = ({ product, handleCart }) => {
+const Product = ({ product, handleCart, handleTotalPrice }) => {
     const { name, description, features, icon, price, tag } = product;
-    const notify = () => toast.success("Added to Cart");
+
     return (
         <div className='shadow-xl rounded-2xl pt-2 px-3 pb-3 space-y-2'>
             <div className='flex justify-end'>
@@ -17,7 +17,7 @@ const Product = ({ product, handleCart }) => {
             {
                 features.map(feature => <p className='flex items-center gap-2 text-[#627382] font-medium'><TfiCheck className='text-green-500' /> {feature}</p>)
             }
-            <button onClick={() => { handleCart(product); notify(); }} className='btn w-full rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white font-bold'>Buy Now</button>
+            <button onClick={() => { handleCart(product); handleTotalPrice(product.price); }} className='btn w-full rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white font-bold'>Buy Now</button>
         </div>
     );
 };

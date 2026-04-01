@@ -9,19 +9,19 @@ const GetStarted = () => {
             <div className='grid grid-cols-1 md:grid-cols-3 gap-5 mt-5 md:mt-16 mb-5 md:mb-24'>
                 <div className='flex flex-col items-center p-3 shadow-lg relative'>
                     <div className="badge badge-primary rounded-full p-1 absolute -top-8 right-4">01</div>
-                    <figure><img className='p-4 bg-purple-200 rounded-full' src="/src/assets/user.png" alt="" /></figure>
+                    <figure><img className='p-4 bg-purple-200 rounded-full' src="https://i.ibb.co.com/WWds284K/user.png" alt="" /></figure>
                     <h4 className='text-2xl font-bold'>Create Account</h4>
                     <p className='text-center text-[#627382]'>Sign up for free in seconds. No credit card <br /> required to get started.</p>
                 </div>
                 <div className='flex flex-col items-center p-3 shadow-lg relative'>
                     <div className="badge badge-primary rounded-full p-1 absolute -top-8 right-4">02</div>
-                    <img className='p-4 bg-purple-200 rounded-full' src="/src/assets/package.png" alt="" />
+                    <img className='p-4 bg-purple-200 rounded-full' src="https://i.ibb.co.com/Fqqxf1ZS/package.png" alt="" />
                     <h4 className='text-2xl font-bold'>Choose Products</h4>
                     <p className='text-center text-[#627382]'>Browse our catalog and select the tools <br /> that fit your needs.</p>
                 </div>
                 <div className='flex flex-col items-center p-3 shadow-lg relative'>
                     <div className="badge badge-primary rounded-full p-1 absolute -top-8 right-4">03</div>
-                    <img className='p-4 bg-purple-200 rounded-full' src="/src/assets/rocket.png" alt="" />
+                    <img className='p-4 bg-purple-200 rounded-full' src="https://i.ibb.co.com/gbtqVCvn/rocket.png" alt="" />
                     <h4 className='text-2xl font-bold'>Start Creating</h4>
                     <p className='text-center text-[#627382]'>Download and start using your premium <br /> tools immediately.</p>
                 </div>
